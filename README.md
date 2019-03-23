@@ -1,4 +1,4 @@
-# AutoDecoder.py
+## Features
 Tool to automatically decode/decipher a message. The following decoders/deciphers have been implemented:
 
 - Base16
@@ -16,20 +16,19 @@ Tool to automatically decode/decipher a message. The following decoders/decipher
 - Playfair
 - Vigenère
 
-# Installation
-git clone https://github.com/oreosES/autodecoder.git
+## Installation
+`git clone https://github.com/oreosES/autodecoder.git`
 
-# Dependencies
-Python3 argparse, colorama, pycipher and pyperclip libraries. To install them using pip3:
+Audodecoder can be run directly from the python script but We suggest you to install it with `make install`
 
-pip3 install argparse colorama pycipher pyperclip
+## Dependencies
+Python3 argparse, colorama, pycipher and pyperclip libraries. 
+`pip3 install argparse colorama pycipher pyperclip`
 
-# Usage
-python3 audodecoder.py -h
+## Usage
+`python3 audodecoder.py -h`
 
-usage: audodecoder.py [-h] [-l LEVELS] [-k KEY] [-p PATTERN] -m MESSAGE
-
-AutoDecoder.py
+**Usage:** audodecoder.py [-h] [-l LEVELS] [-k KEY] [-p PATTERN] -m MESSAGE
 
 optional arguments:
 - -h, --help            show this help message and exit
@@ -46,12 +45,13 @@ required named arguments:
 - -m MESSAGE, --message MESSAGE
                         Message to decode
 
-# Example
-
+## Example
+```
 echo -n "TEST" | base64 | base64
-VkVWVFZBPT0K
+VkVWVFZBPT0K`
+```
 
-python3 autodecoder.py --message VkVWVFZBPT0K --levels 2
+`python3 audodecoder.py --message VkVWVFZBPT0K --levels 2`
 - base64 > base64 > TEST
 - base64 > rot13 > IRIGIN==
 - base64 > rot47 > 't'%'pll
@@ -61,5 +61,5 @@ python3 autodecoder.py --message VkVWVFZBPT0K --levels 2
 - rot47 > rot13 > '<'('h+d!%_m
 - rot47 > rot47 > VkVWVFZBPT0K
 
-# Contact
-https://www.twitter.com/oreos_es
+## Contact
+- https://www.twitter.com/oreos_es
