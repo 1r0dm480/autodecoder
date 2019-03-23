@@ -7,7 +7,7 @@ try:
     from itertools import product
 except:
     print("\
-AutoDecoder.py - Error: Install required libraries\n\
+AudoDecoder - Error: Install required libraries\n\
     pip3 install argparse colorama pycipher pyperclip")
     exit()
 
@@ -65,7 +65,7 @@ def decodefunc(args):
 
 def main():
     banner()
-    parser = argparse.ArgumentParser(description='AutoDecoder.py')
+    parser = argparse.ArgumentParser(description='AudoDecoder')
     parser.add_argument("-l", "--levels", type=int, help='Number of decoding levels [1-6], default = 2', default=2)
     parser.add_argument("-k", "--key", type=str, help='Key used to decode')
     parser.add_argument("-c", "--caesar", type=int, help='Caesar shift to use [0-25], default = 3', default=3)
