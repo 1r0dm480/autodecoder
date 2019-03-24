@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 try:
     from colorama import Fore
     import argparse
